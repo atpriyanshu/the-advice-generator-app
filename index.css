@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@560&display=swap");
+@import url("variable.css");
+@import url("normalize.css");
+
+body {
+  display: grid;
+  place-content: center;
+
+  color: var(--base-color);
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  background-color: var(--base-background);
+}
+
+::selection {
+  background-color: var(--selection-background);
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  margin-inline: 21px;
+
+  padding: var(--card-padding);
+  max-width: var(--card-width);
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background);
+}
+
+.card__id {
+  text-transform: uppercase;
+
+  padding-block: var(--card-id-padding);
+  color: var(--card-id-color);
+  font-size: var(--card-id-font-size);
+  letter-spacing: var(--card-id-letter-spacing);
+}
+
+.card__text {
+  font-weight: 560;
+  padding-block: var(--card-text-padding);
+  font-size: var(--card-text-font-size);
+}
+
+.card__play {
+  padding-block: var(--card-play-padding);
+}
+
+.card__play__img {
+  width: 100%;
+}
+
+.card__fullscreen {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  cursor: pointer;
+  transition: box-shadow 100ms;
+  transform: translate(-50%, -50%);
+
+  padding: var(--card-fullscreen-padding);
+  border-radius: var(--card-fullscreen-border-radius);
+  background-color: var(--card-fullscreen-background);
+}
+
+.card__fullscreen:hover,
+.card__fullscreen:active,
+.card__fullscreen:focus {
+  box-shadow:
+    0 0 15px -10px var(--card-fullscreen-background),
+    0 0 40px -4px var(--card-fullscreen-background);
+}
+
+[role="button"] {
+  user-select: none;
+}
+
+.no-select {
+  user-select: none;
+}

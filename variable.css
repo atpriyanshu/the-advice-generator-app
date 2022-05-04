@@ -1,0 +1,49 @@
+:root {
+  --clr-light-cyan: hsl(193, 38%, 86%);
+  --clr-neon-green: hsl(150, 100%, 66%);
+  --clx-neon-green: 150 100% 66%;
+
+  --clr-dark-blue: hsl(218, 23%, 16%);
+  --clr-grayish-blue: hsl(217, 19%, 38%);
+  --clr-dark-grayish-blue: hsl(217, 19%, 24%);
+  --clr-light: hsl(0, 0%, 100%);
+
+  --fs-300: 0.8em;
+  --fs-base: 1rem;
+  --fs-700: 28px;
+  --ff-base: "Manrope", "Roboto", sans-serif;
+}
+
+:root {
+  --base-color: var(--clr-light-cyan);
+  --base-font-size: var(--fs-base);
+  --base-font-family: var(--ff-base);
+  --base-background: var(--clr-dark-blue);
+
+  --selection-background: hsl(var(--clx-neon-green) / 0.1);
+
+  --card-padding: 2em 3em;
+  --card-width: 560px;
+  --card-border-radius: 1em;
+  --card-background: var(--clr-dark-grayish-blue);
+
+  --card-id-padding: 1em;
+  --card-id-color: var(--clr-neon-green);
+  --card-id-font-size: var(--fs-300);
+  --card-id-letter-spacing: 0.3ch;
+
+  --card-text-padding: 0em;
+  --card-text-font-size: var(--fs-700);
+
+  --card-play-padding: 2em;
+
+  --card-fullscreen-padding: 20px;
+  --card-fullscreen-border-radius: 50%;
+  --card-fullscreen-background: var(--clr-neon-green);
+}
+
+@media screen and (max-width: 540px) {
+  :root {
+    --fs-700: 22px;
+  }
+}
